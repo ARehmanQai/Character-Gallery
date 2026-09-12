@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+    <style>
+        .chrome-color {
+            background: linear-gradient(180deg, #A8A9AD 30%, #5E6674 75%, #A1A2A5 100%);
+        }
+    </style>
+
+    <title>Marvel Characters</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary chrome-color bg-light">
+        <div class="container-fluid d-flex">
+            <a class="navbar-brand link-light fw-bold" href="index.html">
+                <img src="resources/images/Marvel logo.png" alt="Marvel Logo" width="75" height="34"
+                    style="padding-bottom: 4px;">
+                Character Gallery</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link active link-light" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-light" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-light" href="#">Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-light" href="#">Add a Character</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- End Header -->
+
+    <body>
+        <main>
+            <div class="container-lg">
+                <div class="page-header text-center mt-5 mb-4">
+                    <h1 class="display fw-bold">Marvel Character Gallery</h1>
+                    <p class="lead text-muted">Explore an amazing collection of characters from The Marvel Universe</p>
+                </div>
+
+                <!-- Characters Search -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="input-group mb-2">
+                            <div class="form-outline form-control">
+                                <input type="text" placeholder="Search by character name or role..."
+                                    class="form-control form-control-lg border-0 shadow-none" />
+                            </div>
+                            <button type="button" class="btn btn-danger">
+                                <i class="fas fa-search">Search</i>
+                            </button>
+                        </div>
+                        <div class="filter-buttons d-flex flex-wrap gap-2">
+                            <button class="btn btn-outline-danger active">All Characters</button>
+                            <button class="btn btn-outline-danger">IronMan</button>
+                            <button class="btn btn-outline-danger">Hulk</button>
+                            <button class="btn btn-outline-danger">Thor</button>
+                            <button class="btn btn-outline-danger">Captain Marvel</button>
+                            <button class="btn btn-outline-danger">SpiderMan</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- All characters -->
+                <div class="row">
+                    <div class="col-sm-3 mb-3 mb-sm-0">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="resources/images/ironman.jpg" class="card-img-top mb-3" alt="IronMan">
+                                <h5 class="card-title">IronMan</h5>
+                                <p class="mb-2">
+                                    <span class="badge chrome-color">Team Avengers: Tony Stark</span> <br>
+                                    <span>Universe: Marvel Cinematic Universe</span>
+                                </p>
+                                <p class="card-text">A billionaire industrialist, genius inventor, superhero protecting earth. </p>
+                                <a href="#" class="btn btn-danger">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 mb-3 mb-sm-0">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="resources/images/Hulk.jpg" class="card-img-top mb-3" alt="...">
+                                <h5 class="card-title">Hulk</h5>
+                                <p class="mb-2">
+                                    <span class="badge chrome-color">Team Avengers: Dr. Banner</span> <br>
+                                    <span>Universe: Marvel Cinematic Universe</span>
+
+                                </p>
+                                <p class="card-text">Towering, green-skinned behemoth, protector of the innocent and rage-fueled powerhouse. </p>
+                                <a href="#" class="btn btn-danger">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 mb-3 mb-sm-0">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="resources/images/thor.jpg" class="card-img-top mb-3" alt="...">
+                                <h5 class="card-title">Thor</h5>
+                                <p class="mb-2">
+                                    <span class="badge chrome-color">Team Avengers: God of Thunder</span> <br>
+                                    <span>Universe: Marvel Cinematic Universe</span>
+                                </p>
+                                <p class="card-text">Thor, God of Thunder, wielder of Mjolnir and protector of the cosmos.</p>
+                                <a href="#" class="btn btn-danger">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 mb-3 mb-sm-0">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="resources/images/captainMarvel.jpg" class="card-img-top mb-3" alt="...">
+                                <h5 class="card-title">Captain Marvel</h5>
+                                <p class="mb-2">
+                                    <span class="badge chrome-color">Team Avengers</span> <br>
+                                    <span>Universe: Marvel Cinematic Universe</span>
+                                </p>
+                                <p class="card-text">Iconic Kree suit, protector of the universe and cosmic warrior. </p>
+                                <a href="#" class="btn btn-danger">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 mb-3 mb-sm-0">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="resources/images/spiderman.jpg" class="card-img-top mb-3" alt="...">
+                                <h5 class="card-title">SpiderMan</h5>
+                                <p class="mb-2">
+                                    <span class="badge chrome-color">Team Avengers: Peter Parker</span> <br>
+                                    <span>Universe: Marvel Cinematic Universe</span>
+                                </p>
+                                <p class="card-text">Iconic red and blue suit, protector of New York City and agile webslinger. </p>
+                                <a href="#" class="btn btn-danger">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- All characters end -->
+            </div>
+        </main>
+
+        <!-- Footer -->
+
+        <footer class="text-white text-center chrome-color py-4 mt-5">
+            <p class="mb-0">© 2026 Marvel Character Gallery. Created by Abdul Rehman.</p>
+        </footer>
+
+        <!-- Footer Ends -->
+    </body>
+
+</body>
+
+</html>
